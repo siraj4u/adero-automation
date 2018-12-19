@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181218 12:32:57.034" generator="Robot 3.0.4 (Python 2.7.6 on linux2)">
+<suite source="/home/shaik/Downloads/Cloud_Automation_Framework/testsuites/testscripts/trackR.robot" id="s1" name="trackR">
+<test id="s1-t1" name="launch application">
+<status status="FAIL" endtime="20181218 12:32:57.093" critical="yes" starttime="20181218 12:32:57.093">Test case contains no keywords.</status>
+</test>
+<status status="FAIL" endtime="20181218 12:32:57.094" starttime="20181218 12:32:57.034"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="trackR" pass="0">trackR</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20181218 12:32:57.092" level="ERROR">Error in file '/home/shaik/Downloads/Cloud_Automation_Framework/testsuites/testscripts/trackR.robot': Resource file '/home/shaik/Downloads/Cloud_Automation_Framework/testsuites/testscripts/testsuites/resources/trackr_resources.robot' does not exist.</msg>
+</errors>
+</robot>

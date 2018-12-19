@@ -1,0 +1,62 @@
+main_URL : "https://www.adero.com"
+URL : "https://www.adero.com/what-to-tag.html"
+BROWSER_NAME : "chrome"
+shop_URL : 'xpath = //a[@href="https://shop.adero.com/products/kits"]'
+how_it_works_URL : 'xpath = //a[@href="/how-it-works.html"]'
+home_URL :  'xpath = //a[@href="/"]'
+myaccount_URL :  'xpath = //a[@href="https://shop.adero.com/account"]'
+shop_butn_URL :  'xpath = //a[@href="https://shop.adero.com"]'
+cart_URL : 'xpath = //a[@href="https://shop.adero.com/cart"]'
+
+wtt_work_ele : 'xpath = //li[@id="tag-nav-item0"]'
+wtt_the gym_ele : 'xpath = //li[@id="tag-nav-item1"]'
+wtt_play dates_ele : 'xpath = //li[@id="tag-nav-item2"]'
+wtt_cycling_ele : 'xpath = //li[@id="tag-nav-item3"]'
+wtt_college_ele : 'xpath = //li[@id="tag-nav-item4"]'
+wtt_business trips_ele : 'xpath = //li[@id="tag-nav-item5"]'
+wtt_school_ele : 'xpath = //li[@id="tag-nav-item6"]'
+wtt_soccer_ele : 'xpath = //li[@id="tag-nav-item7"]'
+wtt_after work_ele : 'xpath = //li[@id="tag-nav-item8"]'
+wtt_yoga_ele : 'xpath = //li[@id="tag-nav-item9"]'
+wtt_getaways_ele : 'xpath = //li[@id="tag-nav-item10"]'
+wtt_weekdays_ele : 'xpath = //li[@id="tag-nav-item11"]'
+
+wtt_work_block_head : 'xpath = //h2[@data-nav="work"]'
+wtt_work_block_des : 'xpath = //*[@id="tag-text0"]/h4'
+
+wtt_the gym_block_head : 'xpath = //h2[@data-nav="the gym"]'
+wtt_the gym_block_des : 'xpath = //*[@id="tag-text1"]/h4'
+
+wtt_play dates_block_head : 'xpath = //h2[@data-nav="play dates"]'
+wtt_play dates_block_des : 'xpath = //*[@id="tag-text2"]/h4'
+
+wtt_cycling_block_head : 'xpath = //h2[@data-nav="cycling"]'
+wtt_cycling_block_des : 'xpath = //*[@id="tag-text3"]/h4'
+
+wtt_college_block_head : 'xpath = //h2[@data-nav="college"]'
+wtt_college_block_des : 'xpath = //*[@id="tag-text4"]/h4'
+
+wtt_business trips_block_head : 'xpath = //h2[@data-nav="business trips"]'
+wtt_business trips_block_des : 'xpath = //*[@id="tag-text5"]/h4'
+
+
+wtt_school_block_head : 'xpath = //h2[@data-nav="school"]'
+wtt_school_block_des : 'xpath = //*[@id="tag-text6"]/h4'
+
+wtt_soccer_block_head : 'xpath = //h2[@data-nav="soccer"]'
+wtt_soccer_block_des : 'xpath = //*[@id="tag-text7"]/h4'
+
+wtt_after work_block_head : 'xpath = //h2[@data-nav="after work"]'
+wtt_after work_block_des : 'xpath = //*[@id="tag-text8"]/h4'
+
+wtt_yoga_block_head : 'xpath = //h2[@data-nav="yoga"]'
+wtt_yoga_block_des : 'xpath = //*[@id="tag-text9"]/h4'
+
+wtt_getaways_block_head : 'xpath = //h2[@data-nav="getaways"]'
+wtt_getaways_block_des : 'xpath = //*[@id="tag-text10"]/h4'
+
+wtt_weekdays_block_head : 'xpath = //h2[@data-nav="weekdays"]'
+wtt_weekdays_block_des : 'xpath = //*[@id="tag-text11"]/h4'
+
+
+wtt_work_page : 'xpath=//a[@href="/what-to-tag/work.html"]'

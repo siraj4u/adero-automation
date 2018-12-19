@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181218 19:46:46.588" generator="Robot 3.0.4 (Python 2.7.6 on linux2)">
+<suite source="/home/shaik/Downloads/Cloud_Automation_Framework/testsuites/testscripts/trackR.robot" id="s1" name="trackR">
+<test id="s1-t1" name="Launch">
+<kw name="open application" library="trackr_resources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${main_URL}</arg>
+<arg>${BROWSER_NAME}</arg>
+</arguments>
+<msg timestamp="20181218 19:46:46.661" level="INFO">Opening browser 'chrome' to base url 'https://www.adero.com'.</msg>
+<status status="PASS" endtime="20181218 19:46:58.256" starttime="20181218 19:46:46.661"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:46:58.257" starttime="20181218 19:46:46.660"></status>
+</kw>
+<kw name="wait" library="trackr_resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20181218 19:47:00.258" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20181218 19:47:00.258" starttime="20181218 19:46:58.257"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:00.259" starttime="20181218 19:46:58.257"></status>
+</kw>
+<kw name="how it works page" library="trackr_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20181218 19:47:00.260" level="INFO">Opening url 'https://www.adero.com/what-to-tag.html'</msg>
+<status status="PASS" endtime="20181218 19:47:15.030" starttime="20181218 19:47:00.259"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:15.031" starttime="20181218 19:47:00.259"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:15.031" critical="yes" starttime="20181218 19:46:46.660"></status>
+</test>
+<test id="s1-t2" name="validate work option">
+<kw name="validate work option" library="trackr_resources">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${wtt_work_ele}</arg>
+</arguments>
+<assign>
+<var>${ele}</var>
+</assign>
+<msg timestamp="20181218 19:47:15.080" level="INFO">${ele} = work</msg>
+<status status="PASS" endtime="20181218 19:47:15.080" starttime="20181218 19:47:15.033"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${ele}</arg>
+<arg>work</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:15.081" starttime="20181218 19:47:15.081"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele}</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:15.081" starttime="20181218 19:47:15.081"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:15.081" starttime="20181218 19:47:15.033"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:15.082" critical="yes" starttime="20181218 19:47:15.032"></status>
+</test>
+<test id="s1-t3" name="verify work block">
+<kw name="validate work block heading" library="trackr_resources">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${wtt_work_block_head}</arg>
+</arguments>
+<assign>
+<var>${ele}</var>
+</assign>
+<msg timestamp="20181218 19:47:15.106" level="INFO">${ele} = The Nine-to-Fiver</msg>
+<status status="PASS" endtime="20181218 19:47:15.107" starttime="20181218 19:47:15.083"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${ele}</arg>
+<arg>The Nine-to-Fiver</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:15.107" starttime="20181218 19:47:15.107"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele}</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:15.108" starttime="20181218 19:47:15.107"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:15.108" starttime="20181218 19:47:15.082"></status>
+</kw>
+<kw name="validate work block description" library="trackr_resources">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${wtt_work_block_des}</arg>
+</arguments>
+<assign>
+<var>${ele}</var>
+</assign>
+<msg timestamp="20181218 19:47:15.139" level="INFO">${ele} = Don’t leave without your laptop charger.</msg>
+<status status="PASS" endtime="20181218 19:47:15.139" starttime="20181218 19:47:15.109"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${ele}</arg>
+<arg>Don’t leave without your laptop charger.</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:15.139" starttime="20181218 19:47:15.139"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele}</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:15.140" starttime="20181218 19:47:15.139"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:15.140" starttime="20181218 19:47:15.108"></status>
+</kw>
+<kw name="wait" library="trackr_resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20181218 19:47:17.141" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20181218 19:47:17.141" starttime="20181218 19:47:15.140"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:17.142" starttime="20181218 19:47:15.140"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:17.142" critical="yes" starttime="20181218 19:47:15.082"></status>
+</test>
+<test id="s1-t4" name="navigate to work page">
+<kw name="access wtt_work_page" library="trackr_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${wtt_work_page}</arg>
+</arguments>
+<msg timestamp="20181218 19:47:17.147" level="INFO">Clicking element 'xpath=//a[@href="/what-to-tag/work.html"]'.</msg>
+<status status="PASS" endtime="20181218 19:47:17.214" starttime="20181218 19:47:17.146"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:17.215" starttime="20181218 19:47:17.145"></status>
+</kw>
+<kw name="wait" library="trackr_resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20181218 19:47:19.216" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20181218 19:47:19.216" starttime="20181218 19:47:17.215"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:19.217" starttime="20181218 19:47:17.215"></status>
+</kw>
+<kw name="how it works page" library="trackr_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20181218 19:47:19.219" level="INFO">Opening url 'https://www.adero.com/what-to-tag.html'</msg>
+<status status="PASS" endtime="20181218 19:47:39.393" starttime="20181218 19:47:19.219"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:39.394" starttime="20181218 19:47:19.217"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:39.394" critical="yes" starttime="20181218 19:47:17.144"></status>
+</test>
+<test id="s1-t5" name="validate gym option">
+<kw name="access gym link" library="trackr_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${wtt_the gym_ele}</arg>
+</arguments>
+<msg timestamp="20181218 19:47:39.395" level="INFO">Clicking element 'xpath = //li[@id="tag-nav-item1"]'.</msg>
+<status status="PASS" endtime="20181218 19:47:39.451" starttime="20181218 19:47:39.395"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20181218 19:47:41.452" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20181218 19:47:41.453" starttime="20181218 19:47:39.452"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:41.453" starttime="20181218 19:47:39.395"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:41.454" critical="yes" starttime="20181218 19:47:39.394"></status>
+</test>
+<test id="s1-t6" name="verify gym block">
+<kw name="validate gym block heading" library="trackr_resources">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${wtt_the gym_block_head}</arg>
+</arguments>
+<assign>
+<var>${ele1}</var>
+</assign>
+<msg timestamp="20181218 19:47:41.497" level="INFO">${ele1} = The Gym Junkie</msg>
+<status status="PASS" endtime="20181218 19:47:41.497" starttime="20181218 19:47:41.457"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${ele1}</arg>
+<arg>The Gym Junkie</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:41.498" starttime="20181218 19:47:41.497"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele1}</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:41.498" starttime="20181218 19:47:41.498"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:41.498" starttime="20181218 19:47:41.456"></status>
+</kw>
+<kw name="validate gym block description" library="trackr_resources">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${wtt_the gym_block_des}</arg>
+</arguments>
+<assign>
+<var>${ele1}</var>
+</assign>
+<msg timestamp="20181218 19:47:41.525" level="INFO">${ele1} = It’s hard to tame the treadmill without your running shoes.</msg>
+<status status="PASS" endtime="20181218 19:47:41.525" starttime="20181218 19:47:41.498"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${ele1}</arg>
+<arg>It’s hard to tame the treadmill without your running shoes.</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:41.526" starttime="20181218 19:47:41.525"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele1}</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:41.526" starttime="20181218 19:47:41.526"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:41.526" starttime="20181218 19:47:41.498"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:41.526" critical="yes" starttime="20181218 19:47:41.455"></status>
+</test>
+<test id="s1-t7" name="validate play dates option">
+<kw name="access play dates link" library="trackr_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${wtt_play dates_ele}</arg>
+</arguments>
+<msg timestamp="20181218 19:47:41.528" level="INFO">Clicking element 'xpath = //li[@id="tag-nav-item2"]'.</msg>
+<status status="PASS" endtime="20181218 19:47:41.573" starttime="20181218 19:47:41.528"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20181218 19:47:43.574" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20181218 19:47:43.575" starttime="20181218 19:47:41.573"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:43.575" starttime="20181218 19:47:41.527"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:43.576" critical="yes" starttime="20181218 19:47:41.527"></status>
+</test>
+<test id="s1-t8" name="verify play dates block">
+<kw name="validate play dates block heading" library="trackr_resources">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${wtt_play dates_block_head}</arg>
+</arguments>
+<assign>
+<var>${ele2}</var>
+</assign>
+<msg timestamp="20181218 19:47:43.601" level="INFO">${ele2} = The New Parent</msg>
+<status status="PASS" endtime="20181218 19:47:43.601" starttime="20181218 19:47:43.580"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${ele2}</arg>
+<arg>The New Parent</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:43.601" starttime="20181218 19:47:43.601"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele2}</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:43.602" starttime="20181218 19:47:43.601"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:43.602" starttime="20181218 19:47:43.579"></status>
+</kw>
+<kw name="validate play dates block description" library="trackr_resources">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${wtt_play dates_block_des}</arg>
+</arguments>
+<assign>
+<var>${ele2}</var>
+</assign>
+<msg timestamp="20181218 19:47:43.626" level="INFO">${ele2} = Have what you need to avoid a public meltdown.</msg>
+<status status="PASS" endtime="20181218 19:47:43.626" starttime="20181218 19:47:43.602"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${ele2}</arg>
+<arg>Have what you need to avoid a public meltdown.</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:43.627" starttime="20181218 19:47:43.626"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele2}</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:43.627" starttime="20181218 19:47:43.627"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:43.627" starttime="20181218 19:47:43.602"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:43.628" critical="yes" starttime="20181218 19:47:43.577"></status>
+</test>
+<test id="s1-t9" name="validate cycling block">
+<kw name="access cycling link" library="trackr_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${wtt_cycling_ele}</arg>
+</arguments>
+<msg timestamp="20181218 19:47:43.629" level="INFO">Clicking element 'xpath = //li[@id="tag-nav-item3"]'.</msg>
+<status status="PASS" endtime="20181218 19:47:43.677" starttime="20181218 19:47:43.629"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20181218 19:47:45.678" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20181218 19:47:45.678" starttime="20181218 19:47:43.677"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:45.679" starttime="20181218 19:47:43.629"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:45.679" critical="yes" starttime="20181218 19:47:43.628"></status>
+</test>
+<test id="s1-t10" name="verify cycling block">
+<kw name="validate cycling block heading" library="trackr_resources">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${wtt_cycling_block_head}</arg>
+</arguments>
+<assign>
+<var>${ele3}</var>
+</assign>
+<msg timestamp="20181218 19:47:45.711" level="INFO">${ele3} = The Sunday Cyclist</msg>
+<status status="PASS" endtime="20181218 19:47:45.711" starttime="20181218 19:47:45.684"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${ele3}</arg>
+<arg>The Sunday Cyclist</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:45.712" starttime="20181218 19:47:45.711"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele3}</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:45.712" starttime="20181218 19:47:45.712"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:45.712" starttime="20181218 19:47:45.683"></status>
+</kw>
+<kw name="validate cycling block description" library="trackr_resources">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${wtt_cycling_block_des}</arg>
+</arguments>
+<assign>
+<var>${ele3}</var>
+</assign>
+<msg timestamp="20181218 19:47:45.739" level="INFO">${ele3} = Preventing you from being stranded without a spare.</msg>
+<status status="PASS" endtime="20181218 19:47:45.739" starttime="20181218 19:47:45.713"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${ele3}</arg>
+<arg>Preventing you from being stranded without a spare.</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:45.740" starttime="20181218 19:47:45.739"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele3}</arg>
+</arguments>
+<status status="PASS" endtime="20181218 19:47:45.740" starttime="20181218 19:47:45.740"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:45.740" starttime="20181218 19:47:45.712"></status>
+</kw>
+<status status="PASS" endtime="20181218 19:47:45.740" critical="yes" starttime="20181218 19:47:45.680"></status>
+</test>
+<status status="PASS" endtime="20181218 19:47:45.741" starttime="20181218 19:46:46.589"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="10">Critical Tests</stat>
+<stat fail="0" pass="10">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="trackR" pass="10">trackR</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

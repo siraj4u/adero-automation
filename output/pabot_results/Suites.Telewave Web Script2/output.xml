@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181127 19:50:27.165" generator="Robot 3.0.4 (Python 2.7.6 on linux2)">
+<suite id="s1" name="Suites">
+<suite source="/home/shaik/Downloads/Cloud_Automation_Framework/testsuites/testscripts/telewave_web_script2.robot" id="s1-s1" name="Telewave Web Script2">
+<test id="s1-s1-t1" name="LAUNCH APPLICATION">
+<kw name="Login" library="resources_web">
+<doc>1)To check whether the application is opened successfully or not.</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER_NAME}</arg>
+</arguments>
+<msg timestamp="20181127 19:50:27.242" level="INFO">Opening browser 'chrome' to base url 'http://192.168.1.38:9800/'.</msg>
+<status status="PASS" endtime="20181127 19:50:31.069" starttime="20181127 19:50:27.242"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20181127 19:50:51.070" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20181127 19:50:51.071" starttime="20181127 19:50:31.069"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${USERNAME_LOCATOR}</arg>
+<arg>${USERNAME_FIELD_VALUE}</arg>
+</arguments>
+<msg timestamp="20181127 19:50:51.072" level="INFO">Typing text 'admin@ges.com' into text field 'xpath=//*[@id="email_id"]'.</msg>
+<status status="PASS" endtime="20181127 19:50:51.222" starttime="20181127 19:50:51.071"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20181127 19:50:54.224" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20181127 19:50:54.224" starttime="20181127 19:50:51.223"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PASSWORD_LOCATOR}</arg>
+<arg>${PASSWORD_FIELD_VALUE}</arg>
+</arguments>
+<msg timestamp="20181127 19:50:54.226" level="INFO">Typing password into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" endtime="20181127 19:50:54.320" starttime="20181127 19:50:54.225"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20181127 19:50:57.321" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20181127 19:50:57.322" starttime="20181127 19:50:54.320"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_BUTTON_LOCATOR}</arg>
+</arguments>
+<msg timestamp="20181127 19:50:57.324" level="INFO">Clicking button 'xpath =//*[@id="user_login_form"]/div[5]/button'.</msg>
+<status status="PASS" endtime="20181127 19:50:57.408" starttime="20181127 19:50:57.322"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20181127 19:51:07.409" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20181127 19:51:07.409" starttime="20181127 19:50:57.408"></status>
+</kw>
+<status status="PASS" endtime="20181127 19:51:07.410" starttime="20181127 19:50:27.242"></status>
+</kw>
+<kw name="Edit Device Successful" library="resources_web">
+<doc>1)To check whether device details are edited successfully or not.</doc>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20181127 19:51:12.412" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20181127 19:51:12.413" starttime="20181127 19:51:07.411"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${DEVICE_LIST_TAB_LOCATOR}</arg>
+<arg>message=Device List tab is not visible at home page</arg>
+</arguments>
+<msg timestamp="20181127 19:51:12.444" level="INFO">Element 'xpath=//*[@id="header"]/app-header/div/nav/div/ul/li[2]/a' is displayed.</msg>
+<status status="PASS" endtime="20181127 19:51:12.444" starttime="20181127 19:51:12.414"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${DEVICE_LIST_TAB_LOCATOR}</arg>
+</arguments>
+<msg timestamp="20181127 19:51:12.445" level="INFO">Clicking element 'xpath=//*[@id="header"]/app-header/div/nav/div/ul/li[2]/a'.</msg>
+<status status="PASS" endtime="20181127 19:51:12.512" starttime="20181127 19:51:12.444"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20181127 19:51:17.513" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20181127 19:51:17.513" starttime="20181127 19:51:12.512"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEARCH_BOX_FIELD_LOCATOR }</arg>
+<arg>message=Search Box field is not visible at device list page</arg>
+</arguments>
+<msg timestamp="20181127 19:51:17.556" level="INFO">Element 'xpath=//*[@id="search"]' is displayed.</msg>
+<status status="PASS" endtime="20181127 19:51:17.556" starttime="20181127 19:51:17.514"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEARCH_BOX_FIELD_LOCATOR }</arg>
+</arguments>
+<msg timestamp="20181127 19:51:17.557" level="INFO">Clicking element 'xpath=//*[@id="search"]'.</msg>
+<status status="PASS" endtime="20181127 19:51:17.608" starttime="20181127 19:51:17.556"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20181127 19:51:20.609" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20181127 19:51:20.610" starttime="20181127 19:51:17.608"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SEARCH_BOX_FIELD_LOCATOR }</arg>
+<arg>${SEARCH_BOX_FIELD_VALUE }</arg>
+</arguments>
+<msg timestamp="20181127 19:51:20.612" level="INFO">Typing text '1234567890004' into text field 'xpath=//*[@id="search"]'.</msg>
+<status status="PASS" endtime="20181127 19:51:21.124" starttime="20181127 19:51:20.610"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20181127 19:51:31.125" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20181127 19:51:31.125" starttime="20181127 19:51:21.124"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${EDIT_DEVICE_ICON_LOCATOR}</arg>
+<arg>message=Edit Device icon is not visible at device list page</arg>
+</arguments>
+<msg timestamp="20181127 19:51:31.159" level="INFO">Element 'xpath=//*[@id="edit"]/i' is displayed.</msg>
+<status status="PASS" endtime="20181127 19:51:31.159" starttime="20181127 19:51:31.126"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${EDIT_DEVICE_ICON_LOCATOR}</arg>
+</arguments>
+<msg timestamp="20181127 19:51:31.159" level="INFO">Clicking element 'xpath=//*[@id="edit"]/i'.</msg>
+<status status="PASS" endtime="20181127 19:51:31.252" starttime="20181127 19:51:31.159"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20181127 19:51:36.252" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20181127 19:51:36.253" starttime="20181127 19:51:31.252"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${EDIT_DEVICE_NAME_FIELD_LOCATOR}</arg>
+</arguments>
+<status status="PASS" endtime="20181127 19:51:36.284" starttime="20181127 19:51:36.253"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${EDIT_DEVICE_NAME_FIELD_LOCATOR}</arg>
+<arg>${EDIT_DEVICE_NAME_FIELD_VALUE}</arg>
+</arguments>
+<msg timestamp="20181127 19:51:36.285" level="INFO">Typing text 'Dev4GESL' into text field 'xpath=//*[@id="edit_device_name"]'.</msg>
+<status status="PASS" endtime="20181127 19:51:36.389" starttime="20181127 19:51:36.285"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20181127 19:51:37.390" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181127 19:51:37.390" starttime="20181127 19:51:36.389"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${EDIT_DEVICE_DESCRIPTION_FIELD_LOCATOR}</arg>
+</arguments>
+<status status="PASS" endtime="20181127 19:51:37.443" starttime="20181127 19:51:37.390"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20181127 19:51:38.444" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181127 19:51:38.445" starttime="20181127 19:51:37.443"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${EDIT_DEVICE_DESCRIPTION_FIELD_LOCATOR}</arg>
+<arg>${EDIT_DEVICE_DESCRIPTION_FIELD_VALUE}</arg>
+</arguments>
+<msg timestamp="20181127 19:51:38.446" level="INFO">Typing text 'This field is about device description for Device4' into text field 'xpath=//*[@id="edit_description"]'.</msg>
+<status status="PASS" endtime="20181127 19:51:38.684" starttime="20181127 19:51:38.445"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20181127 19:51:41.684" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20181127 19:51:41.684" starttime="20181127 19:51:38.684"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${UPDATE_DEVICE_BUTTON_LOCATOR}</arg>
+</arguments>
+<msg timestamp="20181127 19:51:41.685" level="INFO">Clicking element 'xpath=//*[@id="edit_device_modal"]/div[2]/div[2]/button'.</msg>
+<status status="PASS" endtime="20181127 19:51:41.756" starttime="20181127 19:51:41.684"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20181127 19:51:43.757" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20181127 19:51:43.757" starttime="20181127 19:51:41.756"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${EDIT_DEVICE_OK_BUTTON_LOCATOR}</arg>
+</arguments>
+<msg timestamp="20181127 19:51:43.759" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/div[3]/button[1]'.</msg>
+<status status="PASS" endtime="20181127 19:51:43.815" starttime="20181127 19:51:43.758"></status>
+</kw>
+<status status="PASS" endtime="20181127 19:51:43.815" starttime="20181127 19:51:07.410"></status>
+</kw>
+<kw name="View Device Data" library="resources_web">
+<doc>1)To check whether device details are visible successfully or not.</doc>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20181127 19:51:48.816" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20181127 19:51:48.817" starttime="20181127 19:51:43.816"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${DEVICE_LIST_TAB_LOCATOR}</arg>
+<arg>message=Device List tab is not visible at home page</arg>
+</arguments>
+<msg timestamp="20181127 19:51:48.848" level="INFO">Element 'xpath=//*[@id="header"]/app-header/div/nav/div/ul/li[2]/a' is displayed.</msg>
+<status status="PASS" endtime="20181127 19:51:48.848" starttime="20181127 19:51:48.817"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${DEVICE_LIST_TAB_LOCATOR}</arg>
+</arguments>
+<msg timestamp="20181127 19:51:48.849" level="INFO">Clicking element 'xpath=//*[@id="header"]/app-header/div/nav/div/ul/li[2]/a'.</msg>
+<status status="PASS" endtime="20181127 19:51:48.901" starttime="20181127 19:51:48.848"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20181127 19:51:53.902" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20181127 19:51:53.903" starttime="20181127 19:51:48.902"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEARCH_BOX_FIELD_LOCATOR }</arg>
+<arg>message=Search Box field is not visible at device list page</arg>
+</arguments>
+<msg timestamp="20181127 19:51:53.928" level="INFO">Element 'xpath=//*[@id="search"]' is displayed.</msg>
+<status status="PASS" endtime="20181127 19:51:53.928" starttime="20181127 19:51:53.903"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEARCH_BOX_FIELD_LOCATOR }</arg>
+</arguments>
+<msg timestamp="20181127 19:51:53.929" level="INFO">Clicking element 'xpath=//*[@id="search"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181127 19:51:54.078" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181127 19:51:54.078" starttime="20181127 19:51:53.996"></status>
+</kw>
+<msg timestamp="20181127 19:51:54.093" level="FAIL">WebDriverException: Message: unknown error: Element &lt;input _ngcontent-c4="" id="search" maxlength="100" placeholder="Device Id" type="text" class="ng-untouched ng-pristine ng-valid"&gt; is not clickable at point (732, 39). Other element would receive the click: &lt;div _ngcontent-c1="" class="nav-wrapper"&gt;...&lt;/div&gt;
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.40.565383 (76257d1ab79276b2d53ee976b2c3e3b9f335cde7),platform=Linux 3.13.0-83-generic x86_64)
+</msg>
+<status status="FAIL" endtime="20181127 19:51:54.094" starttime="20181127 19:51:53.928"></status>
+</kw>
+<status status="FAIL" endtime="20181127 19:51:54.094" starttime="20181127 19:51:43.816"></status>
+</kw>
+<status status="FAIL" endtime="20181127 19:51:54.095" critical="yes" starttime="20181127 19:50:27.241">WebDriverException: Message: unknown error: Element &lt;input _ngcontent-c4="" id="search" maxlength="100" placeholder="Device Id" type="text" class="ng-untouched ng-pristine ng-valid"&gt; is not clickable at point (732, 39). Other element would receive the click: &lt;div _ngcontent-c1="" class="nav-wrapper"&gt;...&lt;/div&gt;
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.40.565383 (76257d1ab79276b2d53ee976b2c3e3b9f335cde7),platform=Linux 3.13.0-83-generic x86_64)
+</status>
+</test>
+<status status="FAIL" endtime="20181127 19:51:54.096" starttime="20181127 19:50:27.179"></status>
+</suite>
+<status status="FAIL" endtime="20181127 19:51:54.097" starttime="20181127 19:50:27.165"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Suites" pass="0">Suites</stat>
+<stat fail="1" id="s1-s1" name="Telewave Web Script2" pass="0">Suites.Telewave Web Script2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

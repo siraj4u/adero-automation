@@ -1,0 +1,18 @@
+*** Settings ***
+Library     SeleniumLibrary
+Resource    ${EXECDIR}/resources/resources_web.robot
+
+*** Test Cases ***
+LAUNCH APPLICATION
+       Login
+       Home Page
+       Device List Page
+       Add Device Successful
+       Logout
+
+
+
+
+
+
+
